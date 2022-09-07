@@ -1,0 +1,49 @@
+.header_wrapper {
+  padding: 22px 0 28px 0;
+  background: linear-gradient(180deg, rgba(22, 21, 29, 0.6) 0%, rgba(22, 21, 29, 0) 100%);
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+}
+.header_wrapper .inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header_wrapper .inner .logo a {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 38px;
+  color: #ffffff;
+}
+.header_wrapper .inner .page_links {
+  display: flex;
+  align-items: center;
+}
+.header_wrapper .inner .page_links li {
+  display: block;
+  padding: 0 20px;
+}
+.header_wrapper .inner .page_links li a {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  display: flex;
+  align-items: center;
+  color: #FFFFFF;
+}
+.header_wrapper .inner .search_acc_terms {
+  display: flex;
+  align-items: center;
+}
+.header_wrapper .inner .search_acc_terms button {
+  background-color: transparent;
+  border: none;
+}
+.header_wrapper .inner .search_acc_terms button.search_field {
+  margin-right: 28px;
+}/*# sourceMappingURL=header.css.map */
