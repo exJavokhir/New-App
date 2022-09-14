@@ -1,0 +1,70 @@
+.header_wrapper{
+    background: linear-gradient(180deg, rgba(22, 21, 29, 0.6) 0%, rgba(22, 21, 29, 0) 100%);
+    padding: 15px 0;
+    .inner{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .header_logo{
+            .header_logo_link{
+                font-family: Proxima Nova;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 24px;
+                line-height: 38px;
+                color: #fff;
+            }
+        }
+        .header_links{
+            ul{
+                display: flex;
+                align-items: center;
+                li{
+                    padding: 0 20px;
+                    .header_links_link{
+                        font-family: 'Proxima Nova';
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 14px;
+                        line-height: 17px;
+                        color: #FFFFFF;
+                    }
+                }
+            }
+        }
+        .header_terms{
+            display: flex;
+            align-items: center;
+            .header_search{
+                margin-right: 24px;
+                width: 24px;
+                height: 24px;
+                button{
+                    width: 100%;
+                    height: 100%;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+            }
+            .header_profile{
+                width: 32px;
+                height: 32px;
+                border-radius: 50%;
+                border: 1px solid #fff;
+                overflow: hidden;
+                button{
+                    width: 100%;
+                    height: 100%;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                        object-fit: contain;
+                    }
+                }
+            }
+        }
+    }
+}

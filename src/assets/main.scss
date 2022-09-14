@@ -1,0 +1,36 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+@font-face {
+    font-family: Proxima Nova;
+    src: url('./font/Proxima\ Nova\ Font.ttf');
+}
+
+body{
+    box-sizing: border-box;
+    background-color: #fff;
+}
+
+.container{
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    max-width: 1200px;
+}
+
+button{
+    background-color: transparent;
+    border: none;
+}
+
+input{
+    border: none;
+    outline: none;
+}
+
