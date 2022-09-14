@@ -1,6 +1,8 @@
 import routes from "./routes/routes";
 import {Routes, Route} from 'react-router-dom'
 import './assets/main.scss'
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
 
 import { Header } from "./container";
 

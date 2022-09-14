@@ -1,0 +1,119 @@
+.home_wrapper{
+    .banner_movie_wrapper{
+        padding: 260px 0 185px 0;
+        background-color: #000;
+        .banner_slider{
+            padding-left: 100px;
+            .movie_info{
+                .movie_type{
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: 16px;
+                    button{
+                        padding: 4px 12px;
+                        font-family: 'Proxima Nova';
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 12px;
+                        line-height: 15px;
+                        border-radius: 4px;
+                        &:nth-child(1){
+                            color: #fff;
+                            background-color: #F4415F;
+                            margin-right: 14px;
+                        }
+                        &:nth-child(2){
+                            background-color: #fff;
+                            color: #000;
+                        }
+                    }
+                }
+                .moive_name{
+                    font-family: 'Proxima Nova';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 48px;
+                    line-height: 58px;
+                    color: #fff;
+                    margin-bottom: 16px;
+                }
+                .movie_rate{
+                    margin-bottom: 24px;
+                    display: flex;
+                    align-items: center;
+                    .rate{
+                        display: flex;
+                        align-items: center;
+                        img{
+                            padding: 0 6px 0 24px;
+                        }
+                        span{
+                            color: #fff;
+                            font-family: 'Proxima Nova';
+                            font-style: normal;
+                            font-weight: 600;
+                            font-size: 18px;
+                            line-height: 24px;
+                        }
+                        &:nth-child(1){
+                            span{
+                                font-family: 'Proxima Nova';
+                                font-style: normal;
+                                font-weight: 600;
+                                font-size: 12px;
+                                line-height: 15px;
+                                &:nth-child(1){
+                                    display: block;
+                                    padding-right: 4px;
+                                }
+                            }
+                        }
+                    }
+                }
+                .movie_watch{
+                    display: flex;
+                    align-items: center;
+                    button{
+                        font-family: 'Proxima Nova';
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 14px;
+                        line-height: 17px;
+                        padding: 15px 24px 15px 60px;
+                        color: #fff;
+                        border-radius: 4px;
+                        position: relative;
+                        &::before{
+                            position: absolute;
+                            content: '';
+                            left: 20px;
+                            top: 0;
+                            bottom: 0;
+                            margin: auto;
+                            background-size: contain;
+                            background-repeat: no-repeat;
+
+                        }
+                        &:nth-child(1){
+                            background: #5931AC;
+                            margin-right: 32px;
+                            &::before{
+                                background-image: url('../../assets/Icons/play.png');
+                                width: 9px;
+                                height: 12px;
+                            }
+                        }
+                        &:nth-child(2){
+                            background: rgba(60, 60, 67, 0.6);
+                            &::before{
+                                background-image: url('../../assets/Icons/plus.png');
+                                width: 24px;
+                                height: 24px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
