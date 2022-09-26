@@ -1,0 +1,70 @@
+.slick-dots{
+    bottom: 350px !important;
+    text-align: left !important;
+    padding: 10px 0 10px 10% !important;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    height: 48px !important;
+    li{
+        button{
+            width: 8px !important;
+            height: 8px !important;
+            border-radius: 50% !important;
+            background-color: rgba(255, 255, 255, 0.35) !important;
+            &::before{
+                display: none !important;
+            }
+        }
+        &.slick-active{
+            width: 24px !important;
+            height: 24px !important;
+            display: inline-block;
+            position: relative;
+            &::after{
+                top: -10px;
+                left: -7px;
+                position: absolute;
+                content: " ";
+                display: block;
+                width: 20px;
+                height: 20px;
+                border-radius: 50%;
+                border: 3px solid #fff;
+                border-color: #656970 #656970 #656970 #fff;
+                animation: lds-dual-ring 1.2s linear infinite;
+            }
+            button{
+                background-color: transparent !important;
+            }
+        }
+    }
+}
+
+.slick-arrow{
+    bottom: 353px !important;
+    position: absolute;
+    right: 0 !important;
+    left: 10% !important;
+    z-index: 1 !important;
+    &.slick-next{
+        top: auto !important;
+        right: 10% !important;
+        left: auto !important;
+    }
+    &.slick-prev{
+        top: auto !important;
+        right: 12% !important;
+        left: auto !important;
+    }
+    
+}
+
+
+@keyframes lds-dual-ring {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }

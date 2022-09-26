@@ -10,11 +10,11 @@ function App() {
 
   return (
     <div className="App">
-      <Header/>
+      {/* <Header/>s */}
       <Routes>
         {
-          routes.map((router, index) => (
-            <Route path={router.path} exact={router.exact} element={router.component} key={index}/>
+          routes.map((router) => (
+            <Route path={router.path} exact={router.exact} element={router.component}/>
           ))
         }
       </Routes>

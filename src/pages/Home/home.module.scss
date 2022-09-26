@@ -1,9 +1,22 @@
 .home_wrapper{
     .banner_movie_wrapper{
-        padding: 260px 0 185px 0;
-        background-color: #000;
+        padding: 260px 0 600px 0;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        &::after{
+            position: absolute;
+            content: '';
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(180deg, rgba(22, 21, 29, 0) 0%, rgba(22, 21, 29, 0.8) 48.31%, #16151D 100%);
+            top: 0;
+            z-index: 1;
+        }
+        
         .banner_slider{
             padding-left: 100px;
+            
             .movie_info{
                 .movie_type{
                     display: flex;
@@ -17,6 +30,8 @@
                         font-size: 12px;
                         line-height: 15px;
                         border-radius: 4px;
+                        position: relative;
+                        z-index: 2;
                         &:nth-child(1){
                             color: #fff;
                             background-color: #F4415F;
@@ -36,11 +51,15 @@
                     line-height: 58px;
                     color: #fff;
                     margin-bottom: 16px;
+                    position: relative;
+                        z-index: 2;
                 }
                 .movie_rate{
                     margin-bottom: 24px;
                     display: flex;
                     align-items: center;
+                    position: relative;
+                        z-index: 2;
                     .rate{
                         display: flex;
                         align-items: center;
@@ -71,6 +90,8 @@
                     }
                 }
                 .movie_watch{
+                    position: relative;
+                        z-index: 2;
                     display: flex;
                     align-items: center;
                     button{
@@ -83,6 +104,7 @@
                         color: #fff;
                         border-radius: 4px;
                         position: relative;
+                        cursor: pointer;
                         &::before{
                             position: absolute;
                             content: '';
@@ -115,5 +137,11 @@
                 }
             }
         }
+    }
+
+    .new_movies{
+        margin-top: -250px;
+        background-color: #16151d;
+        padding-bottom: 48px;
     }
 }
