@@ -1,0 +1,265 @@
+.single_movie_wrapper{
+    .single_back_wrapper{
+        position: relative;
+        background-repeat: no-repeat;
+        background-size: cover;
+        &::after{
+            position: absolute;
+            content: '';
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(180deg, rgba(22, 21, 29, 0) 0%, rgba(22, 21, 29, 0.8) 48.31%, #16151D 100%);
+            top: 0;
+            z-index: 1;
+        }
+        .load_more{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            position: relative;
+            z-index: 2;
+            margin-top: 116px;
+            a{
+                font-family: 'Proxima Nova';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 24px;
+                color: #FFFFFF;
+                display: inline-block;
+                position: relative;
+                &::before{
+                    position: absolute;
+                    left: 0;
+                    right: 0;
+                    bottom: -24px;
+                    width: 10px;
+                    height: 17px;
+                    content: '';
+                    background-image: url('../../assets/Icons/loadmore.png');
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    margin: auto;
+                }
+            }
+        }
+    .banner_slider{
+        padding-left: 100px;
+        padding-top: 260px;
+        .movie_info{
+            .movie_type{
+                display: flex;
+                align-items: center;
+                margin-bottom: 16px;
+                button{
+                    padding: 4px 12px;
+                    font-family: 'Proxima Nova';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 12px;
+                    line-height: 15px;
+                    border-radius: 4px;
+                    position: relative;
+                    z-index: 2;
+                    &:nth-child(1){
+                        color: #fff;
+                        background-color: #F4415F;
+                        margin-right: 14px;
+                    }
+                    &:nth-child(2){
+                        background-color: #fff;
+                        color: #000;
+                    }
+                }
+            }
+            .moive_name{
+                font-family: 'Proxima Nova';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 48px;
+                line-height: 58px;
+                color: #fff;
+                margin-bottom: 16px;
+                position: relative;
+                    z-index: 2;
+            }
+            .movie_rate{
+                margin-bottom: 24px;
+                display: flex;
+                align-items: center;
+                position: relative;
+                    z-index: 2;
+                .rate{
+                    display: flex;
+                    align-items: center;
+                    img{
+                        padding: 0 6px 0 24px;
+                    }
+                    span{
+                        color: #fff;
+                        font-family: 'Proxima Nova';
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 18px;
+                        line-height: 24px;
+                    }
+                    &:nth-child(1){
+                        span{
+                            font-family: 'Proxima Nova';
+                            font-style: normal;
+                            font-weight: 600;
+                            font-size: 12px;
+                            line-height: 15px;
+                            &:nth-child(1){
+                                display: block;
+                                padding-right: 4px;
+                            }
+                        }
+                    }
+                }
+            }
+            .movie_watch{
+                position: relative;
+                    z-index: 2;
+                display: flex;
+                align-items: center;
+                button{
+                    font-family: 'Proxima Nova';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 14px;
+                    line-height: 17px;
+                    padding: 15px 24px 15px 60px;
+                    color: #fff;
+                    border-radius: 4px;
+                    position: relative;
+                    cursor: pointer;
+                    &::before{
+                        position: absolute;
+                        content: '';
+                        left: 20px;
+                        top: 0;
+                        bottom: 0;
+                        margin: auto;
+                        background-size: contain;
+                        background-repeat: no-repeat;
+
+                    }
+                    &:nth-child(1){
+                        background: #5931AC;
+                        margin-right: 32px;
+                        &::before{
+                            background-image: url('../../assets/Icons/play.png');
+                            width: 9px;
+                            height: 12px;
+                        }
+                    }
+                    &:nth-child(2){
+                        background: rgba(60, 60, 67, 0.6);
+                        &::before{
+                            background-image: url('../../assets/Icons/plus.png');
+                            width: 24px;
+                            height: 24px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .info_movie{
+        position: relative;
+        z-index: 2;
+        width: 484px;
+        margin-top: 109px;
+        p{
+            position: relative;
+            z-index: 1;
+            font-family: 'Proxima Nova';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 20px;
+            color: #FFFFFF;
+            margin-bottom: 24px;
+        }
+        .movie_details{
+            ul{
+                display: block;
+                margin-bottom: 24px;
+                display: flex;
+                align-items: flex-start;
+                li{
+                    span{
+                        font-family: 'Proxima Nova';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 20px;
+                        color: #D1D1D6;
+                        display: inline-block;
+
+                        &.info{
+                            color: #fff;
+                        }
+                    }
+                    .infos{
+                        font-family: 'Proxima Nova';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 20px;
+                        color: #fff;
+                        display: inline-block;
+                        text-transform: lowercase;
+                        text-decoration: underline;
+                        margin-right: 10px;
+                        &.uppercase::first-letter{
+                            text-transform: uppercase;
+                        }
+                    }
+                    &.left_side{
+                        min-width: 100px;
+                    }
+                }
+            }
+        }
+    }
+    }
+    .more_details_movie{
+        .trailer{
+            display: flex;
+            align-items: flex-start;
+            .left_side{
+                width: 50%;
+                h2{
+                    font-family: 'Proxima Nova';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 24px;
+                    line-height: 34px;
+                    color: #FFFFFF;
+                    margin-bottom: 24px;
+                }
+                p{
+                    font-family: 'Proxima Nova';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 24px;
+                    color: #FFFFFF;
+                }
+            }
+            .right_side{
+                width: 50%;
+                .iframe{
+                    display: flex;
+                    justify-content: flex-end;
+                    iframe{
+                        width: 476px;
+                        height: 298px;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -4,6 +4,7 @@ import Child from './Child/Child'
 import Collections from './Collections/Collection'
 import Mymovies from './MyMovie/Mymovies'
 import NewMovie from './NewMovie/NewMovie'
+import SingleMovie from './SingleMovie/SingleMovie'
 
 export {
     Home,
@@ -11,5 +12,6 @@ export {
     Child,
     Collections,
     Mymovies,
-    NewMovie
+    NewMovie,
+    SingleMovie
 }

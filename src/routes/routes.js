@@ -4,7 +4,9 @@ import {
     Child,
     Collections,
     Mymovies,
-    NewMovie } from "../pages"
+    NewMovie,
+    SingleMovie
+ } from "../pages"
 
 export default [
     {
@@ -36,5 +38,10 @@ export default [
         exact: true,
         path: '/newmovies',
         component: <NewMovie/>
+    },
+    {
+        exact: true,
+        path: '/single/:id',
+        component: <SingleMovie/>
     },
 ]

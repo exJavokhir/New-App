@@ -1,0 +1,46 @@
+.footer_wrapper{
+    margin-top: 80px;
+    background-color: #13121A;
+    padding: 24px 0;
+    .links{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .logo{
+            font-family: 'Proxima Nova';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 38px;
+            color: #FFFFFF;
+        }
+        .FAQ_links{
+            ul{
+                display: flex;
+                align-items: center;
+                li{
+                    span{
+                        font-family: 'Proxima Nova';
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 14px;
+                        line-height: 17px;
+                        color: #FFFFFF;
+                        display: block;
+                        margin-right: 40px;
+                    }
+                }
+            }
+        }
+        .social_links{
+            ul{
+                display: flex;
+                align-items: center;
+                li{
+                    display: block;
+                    margin-left: 24px;
+                }
+            }
+        }
+    }
+}

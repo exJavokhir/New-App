@@ -2,9 +2,9 @@ import React from 'react'
 import javohir from './moviecard.module.scss'
 import { Link } from 'react-router-dom'
 
-const MovieCard = ({image, title}) => {
+const MovieCard = ({image, title, id}) => {
   return (
-    <Link to={'/'}>
+    <Link to={`/single/${id}`}>
     <div className={javohir.MovieCard_wrapper}>
         <div className={javohir.card_top}>
             <img src={`${process.env.REACT_APP_IMG_URL}${image}`}alt="" />

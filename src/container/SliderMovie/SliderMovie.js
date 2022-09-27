@@ -5,10 +5,10 @@ import MovieCard from "../../components/MovieCard/MovieCard";
 import { settingsCards } from "../../utils/slider";
 import './slider.scss'
 
-const SliderMovie = ({data}) => {
+const SliderMovie = ({data, title}) => {
   return (
     <div className={javohir.SliderMovie_wrapper}>
-      <h2>Novoye filmi</h2>
+      <h2>{title}</h2>
       <Slider {...settingsCards}>
         {data?.map((el, index) => (
           <MovieCard key={index} image={el.poster_path} title={el.title} id={el.id}/>

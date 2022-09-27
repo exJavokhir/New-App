@@ -144,4 +144,135 @@
         background-color: #16151d;
         padding-bottom: 48px;
     }
+    .center_ad_movie{
+        margin-bottom: 48px;
+        .inner{
+            .last_movie{
+                display: flex;
+                align-items: flex-start;
+                background: #201E27;
+                width: 100%;
+                height: 400px;
+                .left_side{
+                    width: 55%;
+                    height: 100%;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+                .right_side{
+                    width: 45%;
+                    padding: 0 24px;
+                    box-sizing: border-box;
+                    .top{
+                        display: flex;
+                        margin-bottom: 36px;
+                        span{
+                            display: block;
+                            font-family: 'Proxima Nova';
+                            font-style: normal;
+                            font-weight: 600;
+                            font-size: 12px;
+                            line-height: 15px;
+                            color: #FFFFFF;
+                            margin-right: 17px;
+                            padding: 8px 12px;
+                            background: #2F2D38;
+                            border-bottom-left-radius: 5px;
+                            border-bottom-right-radius: 5px;
+                        }
+                    }
+                    .stars{
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        margin-bottom: 28px;
+                        h3{
+                            font-family: 'Proxima Nova';
+                            font-style: normal;
+                            font-weight: 600;
+                            font-size: 18px;
+                            line-height: 24px;
+                            color: #FFFFFF;
+                            span{
+                                font-size: 13px;
+                            }
+                        }
+                        img{
+                            object-fit: contain;
+                        }
+                    }
+                    h1{
+                        font-family: 'Proxima Nova';
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 32px;
+                        line-height: 40px;
+                        color: #FFFFFF;
+                        margin-bottom: 24px;
+                    }
+                    p{
+                        font-family: 'Proxima Nova';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 24px;
+                        color: #FFFFFF;
+                    }
+                    .watch{
+                        display: flex;
+                        align-items: center;
+                        margin-top: 47px;
+                        button{
+                            font-family: 'Proxima Nova';
+                            font-style: normal;
+                            font-weight: 600;
+                            font-size: 14px;
+                            line-height: 16px;
+                            color: #FFFFFF;
+                            padding: 7px 24px 7px 60px;
+                            border-radius: 4px;
+                            width: 164px;
+                            box-sizing: border-box;
+                            position: relative;
+                            &::before{
+                                position: absolute;
+                                content: '';
+                                left: 20px;
+                                top: 0;
+                                bottom: 0;
+                                margin: auto;
+                                background-size: contain;
+                                background-repeat: no-repeat;
+    
+                            }
+                            &:nth-child(1){
+                                background: #5931AC;
+                                margin-right: 32px;
+                                &::before{
+                                    background-image: url('../../assets/Icons/play.png');
+                                    width: 9px;
+                                    height: 12px;
+                                }
+                            }
+                            &:nth-child(2){
+                                background: rgba(60, 60, 67, 0.6);
+                                &::before{
+                                    background-image: url('../../assets/Icons/plus.png');
+                                    width: 24px;
+                                    height: 24px;
+                                }
+                            }
+                        }
+                    }
+                }
+                
+            }
+        }
+    }
+    .popular_aladdin{
+        margin-top: 48px;
+    }
 }

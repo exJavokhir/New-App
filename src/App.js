@@ -4,13 +4,13 @@ import './assets/main.scss'
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 
-import { Header } from "./container";
+import { Header, Footer } from "./container";
 
 function App() {
 
   return (
     <div className="App">
-      {/* <Header/>s */}
+      <Header/>
       <Routes>
         {
           routes.map((router) => (
@@ -18,6 +18,7 @@ function App() {
           ))
         }
       </Routes>
+      <Footer/>
     </div>
   );
 }

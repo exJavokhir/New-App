@@ -1,19 +1,19 @@
 import React from "react";
 import javohir from "./home.module.scss";
-import './slider.scss'
+import "./slider.scss";
 import Vector from "../../assets/Icons/Vector.png";
 import Vector1 from "../../assets/Icons/Vector1.png";
 import Slider from "react-slick";
 import { settings } from "../../utils/slider";
 import GetData from "../../hooks/GetData";
 import { Loading, Error, SliderMovie } from "../../container";
-
+import Vote from "../../assets/Icons/voteStar.png";
 const Home = () => {
   const [loading, data, error] = GetData("/movie/upcoming");
   const [loadingTwo, dataTwo, errorTwo] = GetData("/movie/now_playing");
-  if (error && errorTwo ) return <Error />;
+  if (error && errorTwo) return <Error />;
   if (loading && loadingTwo) return <Loading />;
-  
+
   return (
     <div className={javohir.home_wrapper}>
       <div className={javohir.movie_slider_wrapper}>
@@ -63,20 +63,59 @@ const Home = () => {
       </div>
       <div className={javohir.new_movies}>
         <div className="container">
-          <SliderMovie data={dataTwo?.results}/>
+          <SliderMovie data={dataTwo?.results} title={'Новое кино'}/>
         </div>
       </div>
 
-      <div className={javohir.last_movie}>
-        <div className={javohir.left_side}>
-            <img src="" alt="" />
+      <div className={javohir.center_ad_movie}>
+        <div className="container">
+          <div className={javohir.inner}>
+            {dataTwo.results?.splice(1, 1).map((el, index) => (
+              <div className={javohir.last_movie} key={index}>
+                <div className={javohir.left_side}>
+                  <img
+                    src={`${process.env.REACT_APP_IMG_URL}${el.backdrop_path}`}
+                    alt=""
+                  />
+                </div>
+                <div className={javohir.right_side}>
+                  <div className={javohir.top}>
+                    <span>Эксклюзивно</span>
+                    <span>{el.adult ? "18+" : "12+"}</span>
+                    <span>FULL HD</span>
+                  </div>
+                  <div className={javohir.stars}>
+                    <img src={Vote} alt="" />
+                    <h3>
+                      {el.vote_average} <span>TMDB</span>
+                    </h3>
+                  </div>
+                  <h1>{el.title}</h1>
+                  <p>{el.overview}</p>
+                  <div className={javohir.watch}>
+                    <button>Смотреть по подписке</button>
+                    <button>Добавить в избранное</button>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
-        <div className={javohir.right_side}>
-          <div className={javohir.top}></div>
-          <div className={javohir.stars}></div>
-          <h1></h1>
-          <p></p>
-          <div className={javohir.watch}></div>
+      </div>
+
+      <div className={javohir.popular_aladdin}>
+        <div className="container">
+          <div className={javohir.inner}>
+              <SliderMovie data={data?.results} title={'Популярный на Alladdin'}/>
+          </div>
+        </div>
+      </div>
+
+      <div className={javohir.popular_aladdin}>
+        <div className="container">
+          <div className={javohir.inner}>
+              <SliderMovie data={dataTwo?.results} title={'Еще не вышло'}/>
+          </div>
         </div>
       </div>
     </div>
@@ -84,5 +123,3 @@ const Home = () => {
 };
 
 export default Home;
-
-//
